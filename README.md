@@ -4,22 +4,17 @@ Co-learn zkp，一起来做加密隐私大航海的拓荒者！🔥🔥🔥
 
 <br />
 
------
-
-<br />
-
-
 ### Github 使用方法
 
 URL: https://github.com/Antalpha-Labs/zkp-co-learn/discussions
 
 | Categories         | description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| 🍕Materials         | 学习材料分享:  zk/数学/密码学 优质资料(文章/书籍/课程...)    |
-| 🙏 Q&A              | 提问 / 答疑                                                  |
-| 🔧Tricks & Tools    | 你觉得值得分享的小技巧/小工具<br />比如字幕工具/学习英语的技巧/zk 相关很 fancy 的工具 |
-| 👯Co-learn IRL！    | 线下共学自组织 ~  目前已有大理 & 深圳在进行<br />有场不知道如何发起 —— 工具包可自取 |
-| 💡I've got an idea! | 课程结尾关于 Zkp 的一些 Amazing fancy ideas, 用来<br />1. 组队开发, 尝试参与下一期 zkp Hackhouse <br />2. 通过社区的力量来验证可行性/发掘项目潜力<br />3. ... |
+| [🍕Materials](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/materials)         | 学习材料分享:  zk/数学/密码学 优质资料(文章/书籍/课程...)    |
+| [🙏 Q&A](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/q-a)              | 提问 / 答疑                                                  |
+| [🔧Tricks & Tools](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/tricks-tools)    | 你觉得值得分享的小技巧/小工具<br />比如字幕工具/学习英语的技巧/zk 相关很 fancy 的工具 |
+| [👯Co-learn IRL！](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/co-learn-irl)    | 线下共学自组织 ~  目前已有大理 & 深圳在进行<br />有场不知道如何发起 —— 工具包可自取 |
+| [💡I've got an idea!](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/i-ve-got-an-idea) | 课程结尾关于 Zkp 的一些 Amazing fancy ideas, 用来<br />1. 组队开发, 尝试参与下一期 zkp Hackhouse <br />2. 通过社区的力量来验证可行性/发掘项目潜力<br />3. ... |
 
 
 
