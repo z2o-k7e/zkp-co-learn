@@ -1,12 +1,16 @@
 # Antalpha Labs × 706 零知识证明共学营
 
+<img width="1921" alt="image" src="https://user-images.githubusercontent.com/33189338/219869205-bb6e66b9-2f32-41a9-b523-a15ddc822e55.png">
+
 Co-learn zkp，一起来做加密隐私大航海的拓荒者！🔥🔥🔥
+
+> 📢 目前报名已截止，感兴趣的朋友可以添加 706 Creators 负责人（孝羽/Demian 德米安）微信: shirleneliu69 或 soda1543
 
 <br />
 
-### Github 使用方法
+### [Github Discussion](https://github.com/Antalpha-Labs/zkp-co-learn/discussions) 使用方法
 
-URL: https://github.com/Antalpha-Labs/zkp-co-learn/discussions
+
 
 | Categories         | description                                                  |
 | ------------------ | ------------------------------------------------------------ |
