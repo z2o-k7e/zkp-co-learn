@@ -4,7 +4,7 @@
 
 Co-learn zkp，一起来做加密隐私大航海的拓荒者！🔥🔥🔥
 
-> 📢 目前报名已截止，感兴趣的朋友可以添加 706 Creators 负责人（孝羽/Demian 德米安）微信: shirleneliu69 或 soda1543
+> 📢 目前报名已截止，感兴趣的朋友可以添加 zkp co-learn 负责人（孝羽/Demian 德米安）微信: shirleneliu69 或 soda1543
 
 <br />
 
