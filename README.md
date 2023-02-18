@@ -2,7 +2,11 @@
 
 Co-learn zkp，一起来做加密隐私大航海的拓荒者！
 
+<br />
+
 -----
+
+<br />
 
 `Zero-Knowledge Proofs`，即零知识证明，它的定义在于：证明方（Prover）能向验证方（Verifier）证明该论断是否正确，但除此结论外，验证方无法获取任何额外信息。
 
@@ -39,6 +43,8 @@ ZKP 共学都将为你提供一个协作共创的线上社区环境，通过互�
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/33189338/219868617-8a40db53-d720-4b60-b1b5-fb4c2abd602a.png">
 
+<br />
+
 ### 认证与奖励 / Certificate & Reward
 
 * 完成本期 ZKP 学习和作业，可直接进入后期进阶共学；
@@ -52,4 +58,18 @@ ZKP 共学都将为你提供一个协作共创的线上社区环境，通过互�
 * 邀请好友报名共学，每邀请一位可获 2 共学点；
 * 撰写并分享 ZKP 开发经验或学习笔记，每篇可获 2 共学点；
 每位参与者累计达到 10 共学点后，可获得 100% 费用返还。
+
+
+### Github 使用方法
+
+URL: https://github.com/Antalpha-Labs/zkp-co-learn/discussions
+
+| Categories         | description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| 🍕Materials         | 学习材料分享:  zk/数学/密码学 优质资料(文章/书籍/课程...)    |
+| 🙏 Q&A              | 提问 / 答疑                                                  |
+| 🔧Tricks & Tools    | 你觉得值得分享的小技巧/小工具<br />比如字幕工具/学习英语的技巧/zk 相关很 fancy 的工具 |
+| 👯Co-learn IRL！    | 线下共学自组织 ~  目前已有大理 & 深圳在进行<br />有场不知道如何发起 —— 工具包可自取 |
+| 💡I've got an idea! | 课程结尾关于 Zkp 的一些 Amazing fancy ideas, 用来<br />1. 组队开发, 尝试参与下一期 zkp Hackhouse <br />2. 通过社区的力量来验证可行性/发掘项目潜力<br />3. ... |
+
 
