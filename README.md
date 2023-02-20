@@ -1,7 +1,7 @@
 # Antalpha Labs × 706 零知识证明共学营
 
 
-<img width="80%" alt="image" src=https://user-images.githubusercontent.com/33189338/220029985-9041c319-56de-432b-b0a0-120170c72db6.png">
+<img width="80%" alt="image" src="https://user-images.githubusercontent.com/33189338/220029985-9041c319-56de-432b-b0a0-120170c72db6.png">
 
 
 
