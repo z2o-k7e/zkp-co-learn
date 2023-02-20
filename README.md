@@ -1,6 +1,9 @@
 # Antalpha Labs × 706 零知识证明共学营
 
-<img width="80%" alt="image" src="https://user-images.githubusercontent.com/33189338/219869205-bb6e66b9-2f32-41a9-b523-a15ddc822e55.png">
+
+<img width="80%" alt="image" src=https://user-images.githubusercontent.com/33189338/220029985-9041c319-56de-432b-b0a0-120170c72db6.png">
+
+
 
 Co-learn zkp，一起来做加密隐私大航海的拓荒者！🔥🔥🔥
 
