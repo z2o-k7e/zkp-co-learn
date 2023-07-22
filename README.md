@@ -6,8 +6,7 @@
   <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/0e5ec85f-fd7e-4ce3-a579-d86c20b763aa" width="25%" />
   <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/230f2aa6-b5bf-4f39-ac70-0d6cb64a140e" width="25%" /> 
   <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/e0ae9d92-eed9-46dd-822d-816bdf59c24b" width="25%" />
-  <img src=""  width="25%" />
-  
+  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/ca5679f4-e607-4d33-9bd2-762f089967cd"  width="25%" />
 </p>
 
 > 如果二维码过期请找 @Demian 索要 ~
