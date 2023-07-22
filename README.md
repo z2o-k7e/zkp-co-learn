@@ -13,9 +13,9 @@
 
 其他研究项目：
 
-- $\color{red}zkbridge$ ： 可群内联系 Maintainer @Keep
-- $\color{red}STARK \ \  \\&  \ \ STARK \  Aggregation$ ：可群内联系 Maintainer @0xhhh
+- $\color{red}zkbridge$ ： 可群内联系 Maintainer @Keep @啊咪咪小熊 （导师是 zkbridge 创始人哦）
 - $\color{red}halo2$ ：可群内联系 Maintainer @cheerup （被动上岗，后续 Scroll 技术大佬会出手，放心）
+- $STARK \ \  \\&  \ \ STARK \  Aggregation$ ：如上 ↑ 
 
 
 ## Themes ！
