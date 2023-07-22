@@ -3,9 +3,9 @@
 ## 各个讨论小组：
 
 <p float="left">
-  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/0e5ec85f-fd7e-4ce3-a579-d86c20b763aa" width="20%" />
-  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/230f2aa6-b5bf-4f39-ac70-0d6cb64a140e" width="20%" /> 
-  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/e0ae9d92-eed9-46dd-822d-816bdf59c24b" width="20%" />
+  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/0e5ec85f-fd7e-4ce3-a579-d86c20b763aa" width="25%" />
+  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/230f2aa6-b5bf-4f39-ac70-0d6cb64a140e" width="25%" /> 
+  <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/e0ae9d92-eed9-46dd-822d-816bdf59c24b" width="25%" />
 </p>
 
 > 如果二维码过期请找 @Demian 索要 ~
