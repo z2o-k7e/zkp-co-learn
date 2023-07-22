@@ -8,7 +8,7 @@
   <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/e0ae9d92-eed9-46dd-822d-816bdf59c24b" width="30%" />
 </p>
 
-
+> 如果二维码过期请找 @Demian 索要 ~
 
 其他研究项目：
 
