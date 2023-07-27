@@ -1,6 +1,10 @@
 # What are we doing?
 
-## 各个讨论小组：
+## 进阶研究小组：
+
+PS： 如果你不了解以下进阶概念，建议不要盲目进入，推荐先走主线剧情了解整个 zkp 全貌，后续再选择性参与
+
+我们建议最好是有一定时间精力投入，对选题有一定研究基础的，再加入研究小组，会获得更好的、非跳跃式的学习体验。
 
 <p float="left">
   <img src="https://github.com/zkp-co-learning/zkp-co-learn/assets/33189338/0e5ec85f-fd7e-4ce3-a579-d86c20b763aa" width="20%" />
