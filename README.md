@@ -23,6 +23,7 @@ $\color{red}我们建议最好是有一定时间精力投入，对选题有一�
 
 - $\color{red}zkbridge$ ： 可群内联系 Maintainer @Keep @啊咪咪小熊 （导师是 zkbridge 创始人哦）
 - $\color{red}halo2$ ：可群内联系 Maintainer @cheerup （被动上岗，后续 Scroll 技术大佬会出手，放心）
+- [Nova研究小组](https://github.com/dajuguan/awesome-nova-based-Recursive-Zero-Knowledge-Arguments-knowlege/blob/main/README.md)
 - $STARK \ \  \\&  \ \ STARK \  Aggregation$ ：如上 ↑ 
 
 
