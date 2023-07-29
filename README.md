@@ -26,6 +26,21 @@ $\color{red}我们建议最好是有一定时间精力投入，对选题有一�
 - [Nova研究小组](https://github.com/dajuguan/awesome-nova-based-Recursive-Zero-Knowledge-Arguments-knowlege/blob/main/README.md)
 - $STARK \ \  \\&  \ \ STARK \  Aggregation$ ：如上 ↑ 
 
+<br />
+
+### [Github Discussion](https://github.com/Antalpha-Labs/zkp-co-learn/discussions) 使用方法
+
+
+
+| Categories         | description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| [🍕Materials](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/materials)         | 学习材料分享:  zk/数学/密码学 优质资料(文章/书籍/课程...)    |
+| [🙏 Q&A](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/q-a)              | 提问 / 答疑                                                  |
+| [🔧Tricks & Tools](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/tricks-tools)    | 你觉得值得分享的小技巧/小工具<br />比如字幕工具/学习英语的技巧/zk 相关很 fancy 的工具 |
+| [👯Co-learn IRL！](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/co-learn-irl)    | 线下共学自组织 ~  目前已有大理 & 深圳在进行<br />有场不知道如何发起 —— 工具包可自取 |
+| [💡I've got an idea!](https://github.com/Antalpha-Labs/zkp-co-learn/discussions/categories/i-ve-got-an-idea) | 课程结尾关于 Zkp 的一些 Amazing fancy ideas, 用来<br />1. 组队开发, 尝试参与下一期 zkp Hackhouse <br />2. 通过社区的力量来验证可行性/发掘项目潜力<br />3. ... |
+
+
 
 ## Themes ！
 - 自由选题，完成学习并分享可得 **Bounty** ，推荐 PSE 开源项目 ~
