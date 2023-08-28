@@ -14,7 +14,7 @@ Currently, there are challenges related to high barriers to entry, difficulty in
 - Shirlene 孝羽: Head of Creators Co-learning Community
 - Demian: zkp-co-learning community operator, former JD.com algorithm engineer, https://github.com/Demian101
 - Qi Zhou: Founder of ETHStorage
-- 郭宇@Secbit: Founder of Anbi Laboratory, https://github.com/sec-bit
+- 郭宇@Secbit: Founder of Secbit, https://github.com/sec-bit
 - Kurt Pan: Ph.D. in Cryptography from Fudan University, https://github.com/kurtpan666
 - Harry L: co-Founder of Rebase Community.
 - Our Maintainers: dream@Scroll, Po@EthStorage, 0xhhh@EthStorage, Frank Jz Liu, miles, 白菜, KEEP, CJ, 笃行, 阳小雪, 啊咪咪小熊, 饭卡里还有不少钱呢...
