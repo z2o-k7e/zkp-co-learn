@@ -18,6 +18,7 @@ Currently, there are challenges related to high barriers to entry, difficulty in
 - Shirlene 孝羽: director of Creators Co-learning Community
 - Demian: zkp-co-learning community maintainer, former JD.com algorithm engineer, https://github.com/Demian101
 - Our Maintainers: dream@Scroll, Po@EthStorage, 0xhhh@EthStorage, Frank Jz Liu, miles, 白菜, KEEP, CJ, 笃行, 阳小雪, 啊咪咪小熊, 饭卡里还有不少钱呢...
+- sponsoring agency: [Antalpha Labs](https://labs.antalpha.com/)
 
 ## Vision and Mission:
 
