@@ -12,7 +12,7 @@ Currently, there are challenges related to high barriers to entry, difficulty in
 ## Team Background:
 
 - Qi Zhou: Founder of ETHStorage
-- 郭宇@Secbit: Founder of Secbit, https://github.com/sec-bit
+- 郭宇@Secbit: Founder of Secbit, https://github.com/sec-bit, https://secbit.io/
 - Kurt Pan: Ph.D. in Cryptography from Fudan University, https://github.com/kurtpan666 / https://cryptography.land/
 - Harry L: co-Founder of Rebase Community.
 - Shirlene 孝羽: director of Creators Co-learning Community
