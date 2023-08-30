@@ -1,11 +1,3 @@
-$P_\{-1}$
-
-\$P_{-1}\$
-
-$\{f_i\}\subseteq_{set} \{t_i\}$
-
- $\\{f_i\\}\subseteq_{set} \\{t_i\\}$ 
-
 ## Project Description:
 
 zkp-co-learning is a Zero-Knowledge Proofs (ZKP) collaborative study and creation project that has been running for three terms. Since February 2023, we have studied https://zkiap.com/, zk-learning.org, plonkathon codes and more with over 300 participants. We are currently preparing advanced content for zk-learning.org.(like Nova、STARK...)
