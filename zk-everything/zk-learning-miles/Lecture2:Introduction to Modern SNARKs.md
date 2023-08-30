@@ -278,7 +278,7 @@ IOP 交互式预言机证明实际上是一个**信息论对象**,可以在没�
 
 ![](static/PwaRbOec3oOQ2PxNephcooKUn1e.png)
 
-Prover 需要对多项式$f∈F_p^{(≤d)}[X]$承诺.Prover 试图说服 Verifier ,$com_f$满足
+Prover 需要对多项式 $f∈F_p^{(≤d)}[X]$ 承诺.Prover 试图说服 Verifier , $com_f$ 满足
 
 1. 1.f(u)=v ,其中 u,v∈Fp 且公开可见
 2. f 的 degree≤d.
@@ -290,14 +290,14 @@ Prover 需要对多项式$f∈F_p^{(≤d)}[X]$承诺.Prover 试图说服 Verifie
 - 仅使用常规的椭圆曲线,不需要额外的结构: **Bulletproofs** (short proof, but verifier time is O(_d_))
 - Using groups of unknown order: **Dark'20(慢,未获得太多关注)**
 
-考虑 **travial** 的 PCS 情况,用系数表示的方式表示多项式 f,$f(x)=\sum_0^da_ix^i$,过程如下
+考虑 **travial** 的 PCS 情况,用系数表示的方式表示多项式 f, $f(x)=\sum_0^da_ix^i$ ,过程如下
 
 - $$
   commit(f,r)=H((_0,a_1,…,a_d),r)
   $$
 - _eval_ 将按如下方式完成：
 
-  - Prover 将 _π_=((_a_0,_a_1,…,_ad_),_r_) 发送给 Verifier
+  - Prover 将 π = $((a_0,a_1,…,a_d),r)$ 发送给 Verifier
   - verifier 从系数重构 _f_ ，并检查是否 _f_(_u_)=_v_ 和 $H((a_0,a_1,…,a_d),r)=com_f $.
 
 很明显这**不符合 SNARK 的要求**,因为证明大小和验证时间与 _d_ 是线性关系的,而不是 O(log d)
@@ -306,21 +306,21 @@ Prover 需要对多项式$f∈F_p^{(≤d)}[X]$承诺.Prover 试图说服 Verifie
 
 这是 SNARK 的重要组成部分，也是使 SNARK 成为可能的重要原因
 
-考虑最多为_d_ 次的非零多项式$f∈F_p^{(≤d)}[X]$
+考虑最多为_d_ 次的非零多项式 $f∈F_p^{(≤d)}[X]$ 
 
-$r←F_p,Pr[f(r)=0]≤\frac{d}{p}$:从有限域选择一个随机元素 r ,f(r)=0 的概率为 d/p
+ $r←F_p,Pr[f(r)=0]≤\frac{d}{p}$ :从有限域选择一个随机元素 r ,f(r)=0 的概率为 d/p
 
 这是因为 f 最多有 d 个根,_r_ 是从大小 _p 的域_ 中随机选择的.r 命中 d 个根的概率为 d/p.
 
-考虑当 p 远远大于 d 的情况下,比如$p≈2^{256} 和 d≤2^{40}$,_d_/_p_ 可以忽略不计.这意味着当$f(r)=0 ， r←Fp$,Verifier 有着非常高的概率相信多项式在所有点上都为 0.
+考虑当 p 远远大于 d 的情况下,比如 $p≈2^{256} 和 d≤2^{40}$, _d_/_p_ 可以忽略不计.这意味着当$f(r)=0 ， r←Fp$,Verifier 有着非常高的概率相信多项式在所有点上都为 0.
 
 判断一个多项式是否为 0,只需一个随机点进行评估,并检查评估值是否为零即可。
 
-对应[[Schwartz-Zippel-DeMillo-Lipton]](https://en.wikipedia.org/wiki/Schwartz%E2%80%93Zippel_lemma)定理.该定理也适用于多元多项式,将 d 理解为 f 的总 degree 之合即可.比如$f=x^2+y^3 ,d=5$
+对应[[Schwartz-Zippel-DeMillo-Lipton]](https://en.wikipedia.org/wiki/Schwartz%E2%80%93Zippel_lemma)定理.该定理也适用于多元多项式,将 d 理解为 f 的总 degree 之合即可.比如 $f=x^2+y^3 ,d=5$
 
 ##### Two Polynomials are equation
 
-_设_$f,g∈F_p^{(≤d)}[X],r←Fp.$ 如果$f(r)=g(r).则f(r)-g(r)=0.则f-g=0$,那么 _f_=_g_ 的概率非常高.
+设 $f,g∈F_p^{(≤d)}[X],r←Fp$ 如果 $f(r)=g(r).则f(r)-g(r)=0.则f-g=0$ ,那么 f=g 的概率非常高.
 
 下面给出判断两个多项式是否相等的**交互式**协议
 
@@ -338,7 +338,7 @@ _设_$f,g∈F_p^{(≤d)}[X],r←Fp.$ 如果$f(r)=g(r).则f(r)-g(r)=0.则f-g=0$,�
 
   - d/p 可忽略
   - 哈希函数 H 作为一个 **Oracle**,即 H 可自行获得随机质询，然后计算对对应的响应，并将响应发送给 P
-- 该 SNARK 中,Statement x 是 f 与 g 对应的承诺$com_f,com_g$;witness w 是 f 与 g 本身.
+- 该 SNARK 中,Statement x 是 f 与 g 对应的承诺 $com_f,com_g$;witness w 是 f 与 g 本身.
 - **F-S 转化**为非交互式 SNARK:P 通过 H(x)获得随机数 r,不再需要 V 发送 r.因为 V 同样能拿着 x 询问 Oracle,获得 r.
 - 但这**不是一个 zk-snark**,因为 V 可以学习到多项式 f,g 在 r 处的值 y 与 y‘.
 
@@ -346,9 +346,9 @@ _设_$f,g∈F_p^{(≤d)}[X],r←Fp.$ 如果$f(r)=g(r).则f(r)-g(r)=0.则f-g=0$,�
 
 证明者通过内积论证可利用**循环****递归**的方式**证明他拥有两个公开向量承诺的消息, 且这两个消息的内积等于某个公开值**. 对于长度为 n 的消息向量, 内积论证的通信复 杂度为 O(log n).
 
-Prover 可向 Verifier 证明对于公共输入 $A, B ∈ G, g, h ∈ G^n$和公开标量 z∈Zq
+Prover 可向 Verifier 证明对于公共输入 $A, B ∈ G, g, h ∈ G^n$ 和公开标量 z∈Zq
 
-P 拥有向量 a、b,满足$A=g^a、B=h^b 和a·b=z.$则 statement 为
+P 拥有向量 a、b,满足 $A=g^a、B=h^b 和a·b=z$ 则 statement 为
 
 ${(g,h,A,B,z;a,b):A=g^a ∧B=h^b ∧a·b=z}$,其中向量 a,b 为 witness,g,h,A,B 为公共输入
 
@@ -360,16 +360,16 @@ ${(g,h,A,B,z;a,b):A=g^a ∧B=h^b ∧a·b=z}$,其中向量 a,b 为 witness,g,h,A,
 
 - 1.固定群的生成元 g 后, 记 $g^r$ 为 [r], 令 n ∈ N, 记 $(g^{r_1} , g^{r_2} , · · · ,g^{r_n} ) 为 [R]$,[S]同理
 - 设 g, h 的生成方式为 $g ← [R]$, $h ← [S]$
-- 对于 n 为偶数的向量$r=(r_1,r_2,···,r_n)$(不是偶数可填充), 记 $r_{\frac{1}{2}}= (r_1,r_2,··· ,r_{\frac{n}{2}}), r_{\frac{2}{2}} = (r_{\frac{n}{2}+1},r_{\frac{n}{2}+2},··· ,r_n)$
+- 对于 n 为偶数的向量 $r=(r_1,r_2,···,r_n)$ (不是偶数可填充), 记 $r_{\frac{1}{2}}= (r_1,r_2,··· ,r_{\frac{n}{2}}), r_{\frac{2}{2}} = (r_{\frac{n}{2}+1},r_{\frac{n}{2}+2},··· ,r_n)$
 
 **过程如下**
 
-1. 首先基于 V 的随机挑战 c 构造长度一半于原密钥长度的承诺密钥, 即$[r'] ← [c^{−1}r_{\frac{1}{2}} + c^{−2}r_{\frac{2}{2}} ]$
-2. 为防止 P 利用新的承诺密钥 [r′] 作恶, P 需在挑战阶段之前发送部分承诺值$A_{−1} = [a_{\frac{1}{2}} ·r_{\frac{2}{2}} ]和A_1 = [a_{\frac{2}{2}} ·r_{\frac{1}{2}} ]$. 此时新证据为$a′ = ca_{\frac{1}{2}}  +c^2a_{\frac{2}{2}}$
-3. P 和 V 计算新承诺:$A' ←[a' ·r']=[ ca_{\frac{1}{2}}  +c^2a_{\frac{2}{2}}·(c^{−1}r_{\frac{1}{2}} + c^{−2}r_{\frac{2}{2}})=AA^{c^{−1}}_{-1}A_1^c$
-4. 对于承诺密钥 [s]、承诺 B 和秘密输入 b, 利用挑战 c 的逆$c^{-1}$构造对应的承诺密钥 [s′]、新证据 b′ 和承诺值 B′ ,即$[s']←[cs_{\frac{1}{2}} +c^2s_{\frac{2}{2}}], b' ←c^{−1}b_{\frac{1}{2}} +c^{−2}b_{\frac{2}{2}}, B' ←[b' ·s']=B^c_{-1} BB^{c^{−1}}_1$
-5. 对于 z,P 需在挑战阶段前构造$z_{-1} ←a_{\frac{2}{2}} ·b_{\frac{1}{2}} 和z_1 ←a_{\frac{1}{2}} ·b_{\frac{2}{2}}$
-6. 更新后的$z' ←a'·b' =z_{−1}c+z+z_1c^{-1}$
+1. 首先基于 V 的随机挑战 c 构造长度一半于原密钥长度的承诺密钥, 即 $[r'] ← [c^{−1}r_{\frac{1}{2}} + c^{−2}r_{\frac{2}{2}} ]$
+2. 为防止 P 利用新的承诺密钥 [r′] 作恶, P 需在挑战阶段之前发送部分承诺值 $A_{−1} = [a_{\frac{1}{2}} ·r_{\frac{2}{2}} ]和A_1 = [a_{\frac{2}{2}} ·r_{\frac{1}{2}} ]$. 此时新证据为 $a′ = ca_{\frac{1}{2}}  +c^2a_{\frac{2}{2}}$
+3. P 和 V 计算新承诺: $A' ←[a' ·r']=[ ca_{\frac{1}{2}}  +c^2a_{\frac{2}{2}}·(c^{−1}r_{\frac{1}{2}} + c^{−2}r_{\frac{2}{2}})=AA^{c^{−1}}_{-1}A_1^c$
+4. 对于承诺密钥 [s]、承诺 B 和秘密输入 b, 利用挑战 c 的逆 $c^{-1}$ 构造对应的承诺密钥 [s′]、新证据 b′ 和承诺值 B′ ,即 $[s']←[cs_{\frac{1}{2}} +c^2s_{\frac{2}{2}}], b' ←c^{−1}b_{\frac{1}{2}} +c^{−2}b_{\frac{2}{2}}, B' ←[b' ·s']=B^c_{-1} BB^{c^{−1}}_1$
+5. 对于 z,P 需在挑战阶段前构造 $z_{-1} ←a_{\frac{2}{2}} ·b_{\frac{1}{2}} 和z_1 ←a_{\frac{1}{2}} ·b_{\frac{2}{2}}$
+6. 更新后的 $z' ←a'·b' =z_{−1}c+z+z_1c^{-1}$
 7. 归约后的新陈述为 ${([r'],[s'],A',B',z';a',b') : A' = [a' · r'] ∧ B' = [b' · s'] ∧ a' · b' = z')}$
 8. .....递归规约
 
@@ -377,13 +377,13 @@ ${(g,h,A,B,z;a,b):A=g^a ∧B=h^b ∧a·b=z}$,其中向量 a,b 为 witness,g,h,A,
 
 F -IOP 的目标是将 _f_∈F 的承诺转为通用电路的 SNARK。例如，对于一个多项式函数族 $F=F_p^{(≤d)}[X]$ ，使用 F -IOP，可以将其转换为任何电路大小为 ∣_C_∣<_d_ 的 SNARK。
 
-**Definition:****C****(****x****,****w****) 是某些算术电路。 **$x∈F_p^n$** .F -IOP 是一个证明系统，用于证明 ∃****w****:****C****(****x****,****w****)=0 **
+**Definition:****C****(****x****,****w****) 是某些算术电路。 **$x∈F_p^n$**  .F -IOP 是一个证明系统，用于证明 ∃****w****:****C****(****x****,****w****)=0 **
 
-**Setup**: _S_(_C_)→(_pp_,_vp_),其中$vp=(\boxed{f_0},\boxed{f_{−1}},…,\boxed{f_{−s}})$是函数的 Oracle.即 vp 可以理解为 V 可查询的一堆 Oracle,V 可以要求某个给定值显示函数结果,过程如下
+**Setup**: _S_(_C_)→(_pp_,_vp_),其中 $vp=(\boxed{f_0},\boxed{f_{−1}},…,\boxed{f_{−s}})$ 是函数的 Oracle.即 vp 可以理解为 V 可查询的一堆 Oracle,V 可以要求某个给定值显示函数结果,过程如下
 
 ![](static/NPc3bcDHOoZ4KXxJGCbcuMxnn5g.png)
 
-- P 首先发送函数 f1 的 Oracle $\boxed{f_1}$。V 稍后可以在其选择的任何点对 f 进行评估.在实际中,$\boxed{f_1}=commit(f_1)$
+- P 首先发送函数 f1 的 Oracle $\boxed{f_1}$。V 稍后可以在其选择的任何点对 f 进行评估.在实际中, $\boxed{f_1}=commit(f_1)$
 - V 从 Fp 中随机选择 r1 发送给 P.
 - 重复 Step1 and Step2 t-1 轮
 - P 最后发送 ft 的 Oracle $\boxed{f_t}$。
@@ -394,7 +394,7 @@ F -IOP 的目标是将 _f_∈F 的承诺转为通用电路的 SNARK。例如，�
 - **Completeness**:$∃w:C(x,w)=0⟹Pr[V    accepts]=1$
 - Knowledge Soundness:在没有 w 的情况下,恶意 P 无法让 V 相信他知道一个 w,使得 C(x,w)=0
 
-  - Extractor 可以访问 statement x 与函数$f_1,f_2...f_s$**本身**,因为对于这些函数本身的**承诺就是一个 SNARK**,所以 Ectractor 可以从$com_f$中**提取 f 本身**,进而提取出 w.
+  - Extractor 可以访问 statement x 与函数 $f_1,f_2...f_s$ **本身**,因为对于这些函数本身的**承诺就是一个 SNARK**,所以 Ectractor 可以从 $com_f$ 中**提取 f 本身**,进而提取出 w.
 - Zeroknowledge :可不满足
 
 #### Example of IOP
@@ -403,14 +403,14 @@ Polynomial IOP for claim $X⊆W⊆F_p$,用电路 C 去表示该关系:$C(X,W)=0�
 
 ![](static/TOAPbh1oxooYeSxxfLYcrNutnzc.png)
 
-1. P 分别计算两个多项式$f(Z)=∏_{w∈W}(Z−w),g(Z)=∏_{x∈X}(Z−x)$,V 也可计算 g(Z),因为 X 是公共的
+1. P 分别计算两个多项式 $f(Z)=∏_{w∈W}(Z−w),g(Z)=∏_{x∈X}(Z−x)$,V 也可计算 g(Z),因为 X 是公共的
 2. P 计算一个商多项式 $q(Z)=f/g∈F_p^{(≤d)}[X]$,只有在 g 包含所有 f 根的情况下,q 才是一个多项式,即_X_⊆W.举个例子
 
 比如 X={1,2},W={1,2,4} ,$f(Z)=(Z−1)(Z−2)(Z−4), g(Z)=(Z−1)(Z−2) ,q(Z)=f/g=(Z−4)$,只有_X_⊆_W,_q 才是一个有限域中的有效多项式
 
-1. P 发送$\boxed{f},\boxed{q}$给 V
+1. P 发送 $\boxed{f},\boxed{q}$ 给 V
 2. V 发送一个随机数 r 给 P,虽然 P 不会用到 r,但仍然发送,这表明 r 是一个公共值
-3. V 查询$\boxed{f},\boxed{q}$在 r 点的值,记做 w 与 q‘.计算 g(r).验证 g(r)*q’=w 是否成立
+3. V 查询 $\boxed{f},\boxed{q}$ 在 r 点的值,记做 w 与 q‘.计算 g(r).验证 g(r)*q’=w 是否成立
 
 **当我们设计 IOP 时，我们所要做的就是设计 P 向 V 发送哪些 Oracle，然后 V 在哪里查询这些 Oracle。**
 
