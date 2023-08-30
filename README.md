@@ -2,7 +2,7 @@ $P_\{-1}$
 
 \$P_{-1}\$
 
-\\$$\{f_i\}\subseteq_{set} \{t_i\}\\$$
+\$\$\{f_i\}\subseteq_{set} \{t_i\}\$\$
 
 
 ## Project Description:
