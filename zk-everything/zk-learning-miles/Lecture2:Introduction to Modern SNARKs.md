@@ -56,7 +56,7 @@ Operation 表示应用于该照片的操作列表:例如缩小尺寸、灰度化
 
 ## Arithmetic Circuits
 
-Fix a **finite field** F={0,1,…,_p_−1} for some prime _p_>2
+Fix a **finite field** F={0,1,…,p-1} for some prime _p_>2
 
 ![](static/Th8db1MAVoZ2U0xdSUWcOY7KnWe.png)
 
@@ -66,7 +66,7 @@ Arithmetic Circuits 是一个函数，它接受有限域中元素作为输入并
 
 **电路可满足问题** (circuit satisfiability problem, C-SAT) 是指给定电路 C、 电路的部分输入 x (x 可为空) 和电路输出 y, 判断是否存在证据 w (电路的另一部分输入, 视为秘密输 入) 使得 C(x, w) = y.
 
-**布尔电路 (****Boolean**** circuit) **是算术电路的子类, 其仅有与门、异或门等布尔逻辑门, 变量取值仅为 0 或 1. 可以证明, 通过增加常数级别的电路门和深度, **任何布尔电路都可以转换为算术电路**
+**布尔电路**(Boolean circuit)是算术电路的子类, 其仅有与门、异或门等布尔逻辑门, 变量取值仅为 0 或 1. 可以证明, 通过增加常数级别的电路门和深度, **任何布尔电路都可以转换为算术电路**
 
 ![](static/M2u7bKKKdopUHGx0bFNcNTNvnMb.png)
 
