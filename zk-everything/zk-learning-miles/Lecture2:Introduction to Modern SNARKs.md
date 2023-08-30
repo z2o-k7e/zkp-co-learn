@@ -283,7 +283,7 @@ Prover 需要对多项式 $f∈F_p^{(≤d)}[X]$ 承诺.Prover 试图说服 Verif
 1. 1.f(u)=v ,其中 u,v∈Fp 且公开可见
 2. f 的 degree≤d.
 
-我们希望证明是一个 SNARK，那么证明大小和验证时间应该是 O(log_d_),下面是一些 PCS 的实现机制
+我们希望证明是一个 SNARK，那么证明大小和验证时间应该是 $O(log_d)$,下面是一些 PCS 的实现机制
 
 - Using bilinear groups: **KZG'10** (trusted setup,也是**实际中使用最多的**), **Dory'20** (transparent,相比 kzg 慢)
 - 仅使用哈希函数：基于 FRI（long eval proofs）
@@ -292,10 +292,8 @@ Prover 需要对多项式 $f∈F_p^{(≤d)}[X]$ 承诺.Prover 试图说服 Verif
 
 考虑 **travial** 的 PCS 情况,用系数表示的方式表示多项式 f, $f(x)=\sum_0^da_ix^i$ ,过程如下
 
-- $$
-  commit(f,r)=H((_0,a_1,…,a_d),r)
-  $$
-- _eval_ 将按如下方式完成：
+-  commit(f,r)= $H((a_0,a_1,…,a_d),r)$
+- eval_ 将按如下方式完成：
 
   - Prover 将 π = $((a_0,a_1,…,a_d),r)$ 发送给 Verifier
   - verifier 从系数重构 _f_ ，并检查是否 _f_(_u_)=_v_ 和 $H((a_0,a_1,…,a_d),r)=com_f $.
@@ -312,7 +310,7 @@ Prover 需要对多项式 $f∈F_p^{(≤d)}[X]$ 承诺.Prover 试图说服 Verif
 
 这是因为 f 最多有 d 个根,_r_ 是从大小 _p 的域_ 中随机选择的.r 命中 d 个根的概率为 d/p.
 
-考虑当 p 远远大于 d 的情况下,比如 $p≈2^{256} 和 d≤2^{40}$, _d_/_p_ 可以忽略不计.这意味着当$f(r)=0 ， r←Fp$,Verifier 有着非常高的概率相信多项式在所有点上都为 0.
+考虑当 p 远远大于 d 的情况下,比如 $p≈2^{256} 和 d≤2^{40}$, _d_/_p_ 可以忽略不计.这意味着当 $f(r)=0 ， r←Fp$,Verifier 有着非常高的概率相信多项式在所有点上都为 0.
 
 判断一个多项式是否为 0,只需一个随机点进行评估,并检查评估值是否为零即可。
 
@@ -375,9 +373,9 @@ ${(g,h,A,B,z;a,b):A=g^a ∧B=h^b ∧a·b=z}$,其中向量 a,b 为 witness,g,h,A,
 
 ### IOP:Interactive Oracle Proof
 
-F -IOP 的目标是将 _f_∈F 的承诺转为通用电路的 SNARK。例如，对于一个多项式函数族 $F=F_p^{(≤d)}[X]$ ，使用 F -IOP，可以将其转换为任何电路大小为 ∣_C_∣<_d_ 的 SNARK。
+F -IOP 的目标是将 f∈F 的承诺转为通用电路的 SNARK。例如，对于一个多项式函数族 $F=F_p^{(≤d)}[X]$ ，使用 F -IOP，可以将其转换为任何电路大小为 ∣C∣<d 的 SNARK。
 
-**Definition:****C****(****x****,****w****) 是某些算术电路。 **$x∈F_p^n$**  .F -IOP 是一个证明系统，用于证明 ∃****w****:****C****(****x****,****w****)=0 **
+**Definition**:****C****(****x****,****w****) 是某些算术电路。 **$x∈F_p^n$**  .F -IOP 是一个证明系统，用于证明 ∃****w****:****C****(****x****,****w****)=0 **
 
 **Setup**: _S_(_C_)→(_pp_,_vp_),其中 $vp=(\boxed{f_0},\boxed{f_{−1}},…,\boxed{f_{−s}})$ 是函数的 Oracle.即 vp 可以理解为 V 可查询的一堆 Oracle,V 可以要求某个给定值显示函数结果,过程如下
 
@@ -391,7 +389,7 @@ F -IOP 的目标是将 _f_∈F 的承诺转为通用电路的 SNARK。例如，�
 
 #### Properties of IOP
 
-- **Completeness**:$∃w:C(x,w)=0⟹Pr[V    accepts]=1$
+- **Completeness**: $∃w:C(x,w)=0⟹Pr[V    accepts]=1$
 - Knowledge Soundness:在没有 w 的情况下,恶意 P 无法让 V 相信他知道一个 w,使得 C(x,w)=0
 
   - Extractor 可以访问 statement x 与函数 $f_1,f_2...f_s$ **本身**,因为对于这些函数本身的**承诺就是一个 SNARK**,所以 Ectractor 可以从 $com_f$ 中**提取 f 本身**,进而提取出 w.
@@ -399,14 +397,14 @@ F -IOP 的目标是将 _f_∈F 的承诺转为通用电路的 SNARK。例如，�
 
 #### Example of IOP
 
-Polynomial IOP for claim $X⊆W⊆F_p$,用电路 C 去表示该关系:$C(X,W)=0⟺X⊆W⊆F_p$,过程如下
+Polynomial IOP for claim $X⊆W⊆F_p$,用电路 C 去表示该关系: $C(X,W)=0⟺X⊆W⊆F_p$,过程如下
 
 ![](static/TOAPbh1oxooYeSxxfLYcrNutnzc.png)
 
 1. P 分别计算两个多项式 $f(Z)=∏_{w∈W}(Z−w),g(Z)=∏_{x∈X}(Z−x)$,V 也可计算 g(Z),因为 X 是公共的
-2. P 计算一个商多项式 $q(Z)=f/g∈F_p^{(≤d)}[X]$,只有在 g 包含所有 f 根的情况下,q 才是一个多项式,即_X_⊆W.举个例子
+2. P 计算一个商多项式 $q(Z)=f/g∈F_p^{(≤d)}[X]$,只有在 g 包含所有 f 根的情况下,q 才是一个多项式,即X⊆W.举个例子
 
-比如 X={1,2},W={1,2,4} ,$f(Z)=(Z−1)(Z−2)(Z−4), g(Z)=(Z−1)(Z−2) ,q(Z)=f/g=(Z−4)$,只有_X_⊆_W,_q 才是一个有限域中的有效多项式
+比如 X={1,2},W={1,2,4}, $f(Z)=(Z−1)(Z−2)(Z−4), g(Z)=(Z−1)(Z−2) ,q(Z)=f/g=(Z−4)$ ,只有X⊆W,q 才是一个有限域中的有效多项式
 
 1. P 发送 $\boxed{f},\boxed{q}$ 给 V
 2. V 发送一个随机数 r 给 P,虽然 P 不会用到 r,但仍然发送,这表明 r 是一个公共值
