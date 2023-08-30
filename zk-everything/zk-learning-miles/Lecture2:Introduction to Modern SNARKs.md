@@ -70,7 +70,7 @@ Arithmetic Circuits 是一个函数，它接受有限域中元素作为输入并
 
 ![](static/M2u7bKKKdopUHGx0bFNcNTNvnMb.png)
 
-**Valiant's theorem:**所有多项式时间可计算的函数都可以通过多项式大小的算术电路来表示
+**Valiant's theorem**:所有多项式时间可计算的函数都可以通过多项式大小的算术电路来表示
 
 仅使用加法、乘法和减法，就可以实现 SHA256 函数，大约需要 20,000 个门才能完成，
 
@@ -137,11 +137,11 @@ Verifier 接受 w,表示 Prover know w.st C(x,w)=0 成立.如何理解 konw 呢,
 
 提取的 w 满足  C(x,w)=0，概率大约是百万分之一减去一些可以忽略不计的值 等等。
 
-**总结:**如果对手 A 能够说服 Verifier 它知道某些 C,statement 和对应的 w，
+**总结**:如果对手 A 能够说服 Verifier 它知道某些 C,statement 和对应的 w，
 
 那么就有一个提取器可以与该对手 A 交互并实际上从 A 中提取 w，使得 C (x,w)= 0。
 
-**trivial NARK:即** proof$\pi=w$的情况.不满足零知识性,但满足前两个属性.Verifier 可以根据 proof 与 x 重新运行电路 验证 C(x,w)=0 是否成立
+**trivial NARK:即** $proof$\pi=w$的情况.不满足零知识性,但满足前两个属性.Verifier 可以根据 proof 与 x 重新运行电路 验证 C(x,w)=0 是否成立
 
 ## SNARK:Succinct Non-interactive  ARgument of Knowledge
 
