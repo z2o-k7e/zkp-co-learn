@@ -1,4 +1,4 @@
-$P_{-1}$
+$P_\{-1}$
 
 ## Project Description:
 
