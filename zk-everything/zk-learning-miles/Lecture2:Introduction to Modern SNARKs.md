@@ -188,7 +188,7 @@ Setup 阶段读取整个电路 C,然后输出电路 C 的摘要-一些公共参�
 
 Setup 阶段通常会采用一些随机位 r 用于生成参数的过程，可分为以下几类
 
-- Trusted setup per circuit:每一个电路都需要重新执行一次 Setup 过程.随机数 r 非常重要,应当保证 Setup 阶段后 r 被销毁**(可信)**,否则其将能够伪造 proof.
+- Trusted setup per circuit:每一个电路都需要重新执行一次 Setup 过程.随机数 r 非常重要,应当保证 Setup 阶段后 r 被销毁(**可信**),否则其将能够伪造 proof.
 - Trusted and universal setup:将 Setup 分为两个阶段
 
   - $S_{init}(\lambda,r) ->gp$:是个一次性的算法,产生全局参数 gp.该阶段完成后,r 就被销毁.所以 init 阶段需要是可信的,但该阶段可以**用于很多电路.**
@@ -226,7 +226,7 @@ IOP 交互式预言机证明实际上是一个**信息论对象**,可以在没�
     ![](static/Luz3bGxYAoFEAUxSdBUc1jubnpc.png)
   - perfect binding::将 A 的计算能力修改为无穷算力,“≤ negl(λ)”替换为 0
 
-有一个使用哈希函数的标准承诺构造。哈希函数 _H_:M×R→_C_ ，其中
+有一个使用哈希函数的标准承诺构造。哈希函数 _H_:M×R→C，其中
 
 - _commit_(_m_,_r_)=_H_(_m_,_r_)
 - _verify_(_m_,_com_,_r_)=accept if _com_=_H_(_m_,_r_)
@@ -235,10 +235,10 @@ IOP 交互式预言机证明实际上是一个**信息论对象**,可以在没�
 
 ![](static/ZEo3bWv7joj4QExjbztcieDZnFb.png)
 
-- 选择一个函数族: F={_f_:_X_→_Y_}. f 表示从集合 x 到集合 y 的函数
-- Prover 运行 Commit 算法,将函数 f 与随机数 r 作为输入,$com_f$为输出.f 可以表示为一个电路 C，一个 C 程序等。
+- 选择一个函数族: F={_f_:X_→Y}. f 表示从集合 x 到集合 y 的函数
+- Prover 运行 Commit 算法,将函数 f 与随机数 r 作为输入, $com_f$ 为输出.f 可以表示为一个电路 C，一个 C 程序等。
 
-然后将$com_f$发送给 Verifier
+然后将 $com_f$ 发送给 Verifier
 
 - Verifier 可以发送回一个函数域中的元素 x
 - Prover 将 x 对应的 f(x)=y,以及 proof 发送给 Verifier. Proof 表明 1.f(x)=y 2.f 属于 F
@@ -247,17 +247,17 @@ IOP 交互式预言机证明实际上是一个**信息论对象**,可以在没�
 
 ![](static/UPnRbDbI1ooe5zx8ilNcI56enKd.png)
 
-- _setup_($1^λ$)→_gp_ 输出公共参数 _gp_ 。
-- c_ommit_(_gp_,_f_,_r_)→$com_f$  用随机数_r_∈R 承诺 _f_∈F
+- setup_($1^λ$)→_gp_ 输出公共参数 _gp_ 。
+- commit(gp,f,r)→ $com_f$  用随机数_r_∈R 承诺 _f_∈F
 
   - 构建 SNARK,必须满足 Binding
   - 对于 **hiding**, 构建 SNARK 并非必须满足,  但当构建 zk-SNARK 需要满足该属性
-- _eval_(_P_,_V_) :对于给定$com_f$和 _x_∈_X_,_y_∈_Y_ ：
+- _eval_(_P_,_V_) :对于给定$com_f$和 x∈X,y∈Y ：
 
   - _Prover_(_gp_,_f_,_x_,_y_,_r_)→_π:生成_一个简短的证明
-  - _V_(_gp_,$com_f$,_x_,_y_,_π_)→accept or reject
-  - _事实上,Prover 与 Verifier 之间的 eval_ 算法是对以下关系的(zk)SNARK 证明
-    _     1.f_(_x_)=_y_ 2. _commit_(_pp_,_f_,_r_)=$com_f$3. _f_∈F
+  - _V_(_gp_, $com_f$ ,_x_,_y_,_π_)→accept or reject
+  - _事实上,Prover 与 Verifier 之间的 eval_ 算法是对以下关系的(zk)SNARK 证明:
+         1.f(_x_)=_y_ 2. _commit_(_pp_,_f_,_r_)= $com_f$ 3. f∈F
 
 ##### Examples of functional commitments
 
