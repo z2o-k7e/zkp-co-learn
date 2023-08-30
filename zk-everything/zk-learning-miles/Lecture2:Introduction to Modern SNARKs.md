@@ -141,7 +141,7 @@ Verifier 接受 w,表示 Prover know w.st C(x,w)=0 成立.如何理解 konw 呢,
 
 那么就有一个提取器可以与该对手 A 交互并实际上从 A 中提取 w，使得 C (x,w)= 0。
 
-**trivial NARK:即** $proof$\pi=w$的情况.不满足零知识性,但满足前两个属性.Verifier 可以根据 proof 与 x 重新运行电路 验证 C(x,w)=0 是否成立
+**trivial NARK:即** proof $\pi=w$的情况.不满足零知识性,但满足前两个属性.Verifier 可以根据 proof 与 x 重新运行电路 验证 C(x,w)=0 是否成立
 
 ## SNARK:Succinct Non-interactive  ARgument of Knowledge
 
@@ -165,7 +165,7 @@ SNARK 是算法 S、P、V 的三元组，与 NARK 中一样，只是**对 proof 
 
 实践中的 SNARK 实际上会非常简洁(**strongly succinct**)。
 
-**strongly succinct:**意味着
+**strongly succinct**:意味着
 
 - proof 不仅是 w 大小的次线性，证明长度必须是电路大小的对数关系.使证明与电路相比非常小！
 - 验证证明的时间与 x 的大小成线性,且最多是电路规模的对数关系。
@@ -205,7 +205,7 @@ Setup 阶段通常会采用一些随机位 r 用于生成参数的过程，可�
 
 Commitment 方案是一个**加密对象**，这意味着它的安全性取决于某些密码学假设。
 
-IOP 交互式预言机证明实际上是一个**信息论对象,**可以在没有任何底层假设的情况下无条件地证明 IOP 的安全性
+IOP 交互式预言机证明实际上是一个**信息论对象**,可以在没有任何底层假设的情况下无条件地证明 IOP 的安全性
 
 ### Commitment 承诺
 
