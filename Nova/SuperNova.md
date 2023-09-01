@@ -122,4 +122,5 @@ fn constraint_augmented_circuit_index<F: PrimeField, CS: ConstraintSystem<F>>(
 非常感谢 SECBIT Labs 的 @郭宇老师对SuperNova研究方向的指导。
 ## 参考文献
 - [Supernova论文](https://eprint.iacr.org/2022/1758)
+- [ROM-based Supernova code](https://github.com/microsoft/Nova/pull/204)
 - [Nova系列资料](https://github.com/dajuguan/awesome-nova-based-Recursive-Zero-Knowledge-Arguments-knowlege)
