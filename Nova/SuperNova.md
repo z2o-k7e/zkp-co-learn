@@ -118,6 +118,8 @@ fn constraint_augmented_circuit_index<F: PrimeField, CS: ConstraintSystem<F>>(
 
   }
 ```
+> 提示：当前基于ROM的Supernova代码还很不成熟，当可选电路很多时，目前代码的拓展性很差。此外，针对于需要根据内存和寄存器来选择电路的问题，虽然论文中给出了一些参考文献，但是这涉及到ZKVM的架构设计等，工程实现会比较复杂，目前还没有相关代码实现。
+
 ## 致谢
 非常感谢 SECBIT Labs 的 @郭宇老师对SuperNova研究方向的指导。
 ## 参考文献
