@@ -1,38 +1,3 @@
-$`a+b+c`$
-
-$$``a+b+c``$$
-
-
-$$`
-a+b+c
-`$$
-
-$$
-`a+b+c`
-$$
-
-$$
-`
-\begin{align*}
-1+2 \\
-3+4 \\
-\end{align*}
-`
-$$
-
-$$
-`\begin{align*}
-1+2 \\
-3+4 \\
-\end{align*}`
-$$
-
-$$`
-\begin{align*}
-1+2 \\
-3+4 \\
-\end{align*}
-`$$
 
 
 ## Project Description:
