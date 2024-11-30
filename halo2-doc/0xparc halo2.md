@@ -28,7 +28,7 @@ a[PLONKish arithmetisation ]
 b[inner product argument]
 c[accumulation scheme]
 
-a -- "low-degeree polynomial" --> b
+a -- "low-degree polynomial" --> b
 b -- "commitment opening proof" --> c
 ```
 
